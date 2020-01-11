@@ -4,13 +4,13 @@
       "name": "next template",
       "type": "template",
       "description": "template for generate next",
-      "command": "cookiecutter gh:equipindustry/cookiecutter-next-redux-saga"
+      "repository": "gh:equipindustry/cookiecutter-next-redux-saga"
     },
     {
       "name": "cookiecutter base",
       "type": "template",
       "description": "template for base project",
-      "command": "cookiecutter gh:luismayta/cookiecutter-base"
+      "repository": "gh:luismayta/cookiecutter-base"
     }
   ]
 }
