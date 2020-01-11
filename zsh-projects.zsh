@@ -17,5 +17,12 @@ function projects::list {
 }
 
 function projects::find {
-    projects::list | fzf
+    local command_value
+    command_value=$(projects::list \
+                    | fzf \
+                    | awk '{print $(NF -0)}' \
+                    | perl -pe 'chomp' \
+                    | sed 's/\"//g'
+                )
+    echo "${command_value}"
 }
